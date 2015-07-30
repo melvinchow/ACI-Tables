@@ -1,0 +1,19 @@
+## CREATES A NEW TABLE THAT COMBINES BOTH TABLES
+
+create table JET_PRICING as 
+SELECT `PLANE_DETAILS`.`Aircraft`,
+    `PLANE_DETAILS`.`Level_1`,
+    `PLANE_DETAILS`.`Level_2`,
+    `PLANE_DETAILS`.`Level_3`,
+    `PLANE_DETAILS`.`Level_4`,
+    `PLANE_DETAILS`.`Level_5`,
+    `PLANE_DETAILS`.`Level_6`,
+    `PLANE_DETAILS`.`Level_7`,
+    `PLANE_DETAILS`.`Level_8`,
+    `PLANE_DETAILS`.`Level_9`,
+    `PLANE_DETAILS`.`Level_10`,
+	`PLANE_TIERS`.`Cst`,
+    `PLANE_TIERS`.`Specialization`,
+    `PLANE_TIERS`.`RegOrSpecial`
+FROM `AC_INFINITY`.`PLANE_TIERS`, `AC_INFINITY`.`PLANE_DETAILS`
+WHERE PLANE_DETAILS.Aircraft = PLANE_TIERS.Aircraft;
