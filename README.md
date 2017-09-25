@@ -1,4 +1,4 @@
 # AC-Infinity-Tables
 
-Spreadsheets and Querries beneficial to the Ace Combat Infinity player.
-Helps for planning money expenditures on aircraft, upgrades, items.
+Spreadsheets and SQL querries beneficial to the Ace Combat Infinity player.
+Helps for planning money expenditures on in-game items.
